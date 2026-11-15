@@ -20,6 +20,8 @@ The `Paradrop` unit action: a unit drops onto a land tile within a range, as Ope
 
 **State.** The mark is a `UnitImprovement` rather than a field on the unit, so a unit that never drops carries nothing
 extra, and it is saved like `Fortified`: a ruleset using it registers `Paradropped` in its
-`AvailableUnitImprovementRegistry` so a save can name it.
+`AvailableUnitImprovementRegistry` so a save can name it. A destroyed unit's mark goes with it: base-unit-lifecycle's
+`lifecycleRules` registers `<prefix>:unit/destroyed/remove-improvements`, which unregisters every improvement of a
+destroyed unit (civ2-unit registers those rules), so this package adds no rule of its own for that.
 
 A library: it has no `main` and registers no rules.
