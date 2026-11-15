@@ -1,6 +1,6 @@
 {
   "name": "@civ-clone/base-unit-action-paradrop",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "The Paradrop unit action: a unit drops onto a land tile within a range, capturing an empty city of another player there, and is marked Paradropped until its player's next turn; with criteria for offering it and the rule that clears the mark.",
   "repository": "git@github.com:civ-clone/base-unit-action-paradrop.git",
   "keywords": [
